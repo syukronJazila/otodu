@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Selamat datang, <span id="username"></span>!</h1>
+    <p>Anda telah berhasil login.</p>
+  </div>
+
+  <script>
+    // Ambil username dari sessionStorage
+    const username = sessionStorage.getItem('username');
+    document.getElementById('username').innerText = username ? username : 'Pengguna';
+
+    // Simpan username ke sessionStorage jika ada
+    if (username) {
+      sessionStorage.setItem('username', username);
+    }
+  </script>
+</body>
+</html>
