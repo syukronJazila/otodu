@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#progress, #riwayatMateri {
+    padding: 30px;
+    flex: 1; /* agar kedua div memiliki lebar yang sama */
+    margin-right: 15px; /* Tambahkan sedikit jarak antara dua kolom */
+}
+
+#riwayatMateri {
+    margin-right: 0; /* Hilangkan margin kanan dari elemen terakhir */
+}
+
+#header{
+    margin: 50px auto;
+}
+
+section{
+    display:block;
+}
