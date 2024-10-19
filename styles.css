@@ -1,0 +1,170 @@
+#progress, #riwayatMateri {
+    padding: 30px;
+    flex: 1; /* Agar kedua div memiliki lebar yang sama */
+    margin-right: 15px; /* Tambahkan sedikit jarak antara dua kolom */
+}
+
+#riwayatMateri {
+    margin-right: 0; /* Hilangkan margin kanan dari elemen terakhir */
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    gap: 30%;
+    margin: 50px auto;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    color: #365373;
+}
+
+#nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    background-color: #f8f9fa;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+    z-index:2;
+}
+
+#nav-bawah {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    max-width: fit-content;
+    position: relative;
+    left: 80%;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+    z-index:1;
+}
+
+#otodu a, #tentang-otodu {
+    background-color: #6578B2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+#tentang-otodu {
+    background-color: transparent;
+    color: #6578B2;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #365373;
+}
+
+.nav-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#progress, #riwayat {
+    padding: 30px;
+    flex: 1;
+    text-align: center;
+    height: 400px;
+}
+
+section {
+    display: block;
+}
+
+#footer, #header {
+    background-color: #6578B2;
+}
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    background-color: #6578B2;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: none;
+}
+
+.carousel-control-prev-icon::after {
+    content: '\2039'; /* Unicode tanda panah kiri */
+    font-size: 24px;
+    color: white;
+}
+
+.carousel-control-next-icon::after {
+    content: '\203A'; /* Unicode tanda panah kanan */
+    font-size: 24px;
+    color: white;
+}
+
+.carousel-item {
+    background-color: #6578B2;
+    height: 500px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#footer-daftar li {
+    margin-top: 5px;
+}
+
+.card {
+    min-height: 350px;
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#card-ganjil {
+    background-color: #1F2546;
+}
+
+#card-genap {
+    background-color: #2E3660;
+}
+
+#kode {
+    background-color: #6578B2;
+}
+
+#masukkanKode {
+    background-color: #1F2546;
+}
+
+#gambar-pencapaian {
+    margin: 5px auto;
+}
