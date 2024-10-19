@@ -60,6 +60,11 @@
         .ml-auto {
             margin-left: auto !important;
         }
+        
+        .dropdown-toggle{
+            background-color: #2E3660;
+        }
+        
     </style>
 </head>
 <body>
@@ -71,7 +76,7 @@
         <a class="nav-link" href="#">Natural Progress Language NLP</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Cari Materi</a>
+        <a class="nav-link" href="#">Materi</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="#">Jasa Design<br> Web/App</a>
@@ -79,7 +84,9 @@
 </ul>
 
 <nav class="navbar navbar-light nav-bawah">
+    
     <div class="container d-flex justify-content-around">
+        
         <a class="navbar-brand position-relative" href="#">
             <span class="position-absolute bg-danger border border-light rounded-circle" 
                   style="top: 5px; right: -5px; width: 10px; height: 10px; display: flex; align-items: center; justify-content: center;">
@@ -94,14 +101,17 @@
 
     
     <section id="materi" class="p-3 mt-3">
+        
         <div class="row">
+            
             <div class="col-md-3">
+                <h2 class="text-light">Cari Materi</h2>
                 <!-- Filter Dropdown -->
                 <div class="search-filter mt-3 mb-3">
                     <input type="text" class="form-control" placeholder="Cari...">
                     <div class="btn-group-vertical mt-3 w-100" role="group" aria-label="Vertical button group">
                         <div class="btn-group mb-2" role="group">
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button type="button" class="btn dropdown-toggle text-light" data-bs-toggle="dropdown" aria-expanded="false">
                                 SD
                             </button>
                             <ul class="dropdown-menu">
@@ -111,7 +121,7 @@
                         </div>
 
                         <div class="btn-group mb-2" role="group">
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button type="button" class="btn dropdown-toggle text-light" data-bs-toggle="dropdown" aria-expanded="false">
                                 SMP
                             </button>
                             <ul class="dropdown-menu">
@@ -121,7 +131,7 @@
                         </div>
 
                         <div class="btn-group mb-2" role="group">
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button type="button" class="btn dropdown-toggle text-light" data-bs-toggle="dropdown" aria-expanded="false">
                                 SMA
                             </button>
                             <ul class="dropdown-menu">
@@ -131,7 +141,7 @@
                         </div>
 
                         <div class="btn-group mb-2" role="group">
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button type="button" class="btn dropdown-toggle text-light" data-bs-toggle="dropdown" aria-expanded="false">
                                 Lanjutan
                             </button>
                             <ul class="dropdown-menu">
@@ -140,7 +150,95 @@
                             </ul>
                         </div>
                     </div>
+                    
                 </div>
+                
+            </div>
+            <div class="col-md-9">
+                <!-- Card Materi -->
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Materi 1</h5>
+                                <p class="card-text">Deskripsi singkat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Materi 2</h5>
+                                <p class="card-text">Deskripsi singkat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Materi 3</h5>
+                                <p class="card-text">Deskripsi singkat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="materi" class="p-3 mt-5">
+        
+        <div class="row">
+            
+            <div class="col-md-3">
+                <h2 class="text-light">Daftar Materi</h2>
+                <!-- Filter Dropdown -->
+                <div class="search-filter mt-3 mb-3">
+                    <input type="text" class="form-control" placeholder="Cari...">
+                    <div class="btn-group-vertical mt-3 w-100" role="group" aria-label="Vertical button group">
+                        <div class="btn-group mb-2" role="group">
+                            <button type="button" class="btn dropdown-toggle text-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                SD
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Materi 1</a></li>
+                                <li><a class="dropdown-item" href="#">Materi 2</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group mb-2" role="group">
+                            <button type="button" class="btn dropdown-toggle text-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                SMP
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Materi 3</a></li>
+                                <li><a class="dropdown-item" href="#">Materi 4</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group mb-2" role="group">
+                            <button type="button" class="btn dropdown-toggle text-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                SMA
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Materi 5</a></li>
+                                <li><a class="dropdown-item" href="#">Materi 6</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group mb-2" role="group">
+                            <button type="button" class="btn dropdown-toggle text-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                Lanjutan
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Materi 7</a></li>
+                                <li><a class="dropdown-item" href="#">Materi 8</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                
             </div>
             <div class="col-md-9">
                 <!-- Card Materi -->
