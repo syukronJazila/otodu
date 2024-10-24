@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: "Poppins";
+        }
+
+        body {
+            background-color: rgb(150, 137, 137);
+        }
+
+        .navbar {
+            background-color: white;
+            padding-inline-start: 1.5vw; /* 15px */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5vw; /* 20px */
+            align-items: center;
+        }
+
+        .navbar a {
+            align-self: center;
+            font-size: 1.2vw; /* 15px */
+            color: #4D62A5;
+            cursor: pointer;
+            padding: 1vw 1.5vw;
+        }
+
+        .navbar a:hover {
+          background-color: #4D62A5;
+          color: white; /* Mengubah warna teks saat di-hover */
+          font-weight: 450;
+        }
+
+        .text {
+            text-align: center;
+            padding: 2vw; /* 20px */
+            background-color: #4D62A5;
+            opacity: 85%;
+        }
+
+        #text-2 {
+            margin-top: 2vw; /* 20px */
+        }
+
+        h4 {
+            color: white;
+            font-weight: 400;
+        }
+
+        #kredit-otodu {
+            color: #1F2844;
+            margin-top: 3vh;
+            margin-left: 5vw; /* 5vw */
+        }
+
+        .kredit-satuan {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+
+        .kredit-satuan p {
+            font-size: 1.1vw; /* 13px */
+            align-self: center;
+        }
+
+        .nomor {
+            width: 5.5vw; /* 5.5% of viewport width */
+            height: 5vh; /* Kept in vh for vertical height */
+            border-radius: 5px;
+            margin-right: 1.5vw; /* 1.5vw */
+            margin-left: 1.5vw; /* 1.5vw */
+            margin-bottom: 2vh; /* Kept in vh for vertical spacing */
+        }
+
+        .rounded-text {
+            background-color: #3D4E84;
+            padding: 0.5vw 1.3vw; /* 5px 15px */
+            border-radius: 1vw; /* 10px */
+            display: inline-block;
+            color: #fff;
+        }
+
+        .atau {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 4vh; /* Kept in vh */
+        }   
+
+        .kredit-diskon {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .kredit-diskon img {
+            height: 23.4vw; /* Converted from 264px */
+            cursor: pointer;
+        }
+
+        #disc-0 {
+            height: 20.5vw; /* Converted from 235px */
+            margin-top: 3vw; /* 30px */
+            margin-left: 2vw; /* 2vw */
+        }
+        
+        #disc-50 {
+            margin-left: 4vw; /* 4vw */
+        }
+
+        .kredit-redeem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10vh; /* Kept in vh */
+            margin-bottom: 5vh; /* Kept in vh */
+        }
+
+        .redeem {
+            width: 15vw; /* Kept in vw */
+            height: 5vh; /* Kept in vh */
+            border-radius: 5px;
+            margin-right: 1.5vw; /* 1.5vw */
+            margin-left: 1.5vw; /* 1.5vw */
+            margin-bottom: 2vh; /* Kept in vh */
+        }
+
+        .btn {
+            background-color: white;
+            color: black;
+            border: 0.05vw solid black; /* 0.5px */
+            padding: 0.2vw 0.7vw; /* 2px 7px */
+            border-radius: 1vw; /* 10px */
+            cursor: pointer;      
+            margin-bottom: 1vw; /* 10px */
+        }
+
+        .btn:hover {
+            background-color: black;
+            color: white;
+        }
+
+        footer {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #1F2844;
+            padding: 1.5vw; /* 20px */
+            color: white;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="container" style="display: flex; align-items: center; gap: 0;">
+            <div class="logo">
+                <img src="image/logo otodu2.png" alt="logo" style="width: 10vw; margin-right: 1vw;"> <!-- 130px -->
+            </div>
+            <a style="margin: 0;">Kredit OTODU</a>
+            <a style="margin: 0;">Riwayat dan Status Pembelian</a>
+            <a style="margin: 0;">Cari Invoice</a>
+        </div>
+    </nav>      
+
+    <div class="text">
+        <h4>Jelajahi pembelajaran otodidak Kamu untuk</h4>
+        <h4 id="text-2">NLP dan Mentor dengan <span style="font-family: 'Martian Mono'; font-weight: 600;">Kredit OTODU</span></h4>
+    </div>
+
+    <div class="card">
+        <p id="kredit-otodu">Kredit OTODU Anda: <span style="font-weight: 600;">69</span></p>
+        <div class="kredit-satuan">
+            <p>Beli kredit satuan</p>
+            <input type="number" class="form-control nomor" placeholder="000" required>
+            <p class="rounded-text">Beli Rp 69.420 (hemat Rp 1.998)</p>
+        </div>
+        <div class="atau">
+            <p>Atau</p>
+        </div>
+        <div class="kredit-diskon">
+            <img id="disc-0" src="image/disc 10 2.png" alt="">
+            <img id="disc-50" src="image/disc 50 2.png" alt="">
+            <img id="disc-100" src="image/disc 100 2.png" alt="">
+        </div>
+        <div class="kredit-redeem">
+            <p>Sudah punya kode?</p>
+            <input type="text" class="form-control redeem" placeholder="Redeem Kode" required>
+            <button type="submit" id="register-btn" class="btn">Redeem</button>
+        </div>
+    </div>
+
+    <footer>
+        <img src="image/logo otodu2.png" alt="logo" style="width: 10vw; margin-right: 2vw; margin-left: 5vw;"> <!-- 120px -->
+        <p style="font-family: 'Martian Mono'; font-size: 0.8vw; margin-top: 3vh;">@2024 OTODU Limited</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</body>
+</html>
